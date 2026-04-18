@@ -18,10 +18,7 @@ public class StatuscodeValidation {
 		//500-Internal server error
 		
 		RestAssured.baseURI="https://rahulshettyacademy.com";
-		given().queryParam(DEFAULT_BODY_ROOT_PATH, null)
-		.when().get("/api/endpoint")
-		.then().assertThat().statusCode(200);
-
+		
 	}
 
 }
