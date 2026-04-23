@@ -7,7 +7,7 @@ public class BasicTests {
 	
 	public static void main (String[] args) {
 		
-		RestAssured.baseURI="https://reqres.in/api/users";
+		//RestAssured.baseURI="https://reqres.in/api/users";
 		
 		
 	}
