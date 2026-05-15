@@ -4,6 +4,8 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import static io.restassured.RestAssured.*;
 
+import java.util.HashMap;
+
 public class OAuth_2 {
 	
 	public static void main (String[] args) {
@@ -19,7 +21,15 @@ public class OAuth_2 {
 	
 		String CourseResponse= given().queryParam(accessToken).when().get("https://rahulshettyacademy.com/oauthapi/getCourseDetails").toString();
 		System.out.println(CourseResponse);
-	
+		
+		HashMap<Object, Object> mymap = new HashMap<>();
+		mymap.put("Name", "Mohanasundaram");
+		mymap.put("Age", 26);
+		mymap.put("City", "Chennai");
+		
+		String sample=given().body("mymap").when().get().then().toString();
+		
+		
 		
 		
 		
