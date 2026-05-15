@@ -20,6 +20,9 @@ public class BasicTests {
 	
 		String CourseResponse= given().queryParam(accessToken).when().get("https://rahulshettyacademy.com/oauthapi/getCourseDetails").toString();
 		System.out.println(CourseResponse);
+	
+		
+		
 		
 	}
 
