@@ -2,10 +2,9 @@ package RestAssured_Test;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
-
 import static io.restassured.RestAssured.*;
 
-public class BasicTests {
+public class OAuth_2 {
 	
 	public static void main (String[] args) {
 		
